@@ -1,0 +1,98 @@
+body {
+    font-family: $primary-font;
+    font-size: 16px;
+    line-height: 1;
+
+    color: $gray-light;
+
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+// - Các thẻ sau không dính CSS của body được nên phải CSS lại
+input,
+button,
+textarea,
+select {
+    font-family: $primary-font;
+    font-size: 16px;
+    outline: none;
+    border: 0;
+    color: white;
+}
+
+input {
+    line-height: normal;
+}
+
+.container {
+    //+ contain đo được 1170px phải cộng thêm padding 15px để hiển thị trên điện thoại
+    //+ => 1200px
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; /* - thụt vào 2 bên 15px để hiển thị trên mobile ko sát lề */
+}
+
+.second-font {
+    font-family: $secondary-font;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    // padding-left: 70px;
+    // padding-right: 70px;
+
+    border-radius: 6px;
+
+    width: 230px;
+    height: 55px;
+
+    outline: none;
+    cursor: pointer;
+    color: white;
+    // background-color: rgb(70, 6, 196);
+
+    font-size: 16px;
+    font-weight: 500;
+    font-family: $primary-font;
+    &-primary {
+        background-color: $blue-color;
+    }
+    &-secondary{
+        background-color: transparent;
+        background-image: linear-gradient( to right, #f475a0, #feac3d);
+    }
+}
+h1,
+h2,
+h3,
+h4 {
+    color: $gray;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: lineH(56, 36);
+    font-family: $secondary-font;
+    color: $gray;
+    margin-bottom: 30px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: lineH(34, 18);
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 800;
+    font-family: $secondary-font;
+    line-height: lineH(35, 22);
+    margin-bottom: 20px;
+    display:block;
+    color: $gray;
+}

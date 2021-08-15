@@ -1,0 +1,33 @@
+.blog {
+    &-main {
+        margin-bottom: 150px;
+    }
+    &-header {
+        max-width: 560px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    &-heading {
+    }
+    &-desc {
+    }
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+    &-item {
+    }
+    &-image {
+        margin-bottom: 40px;
+    }
+    &-item-content {
+    }
+    &-category {
+        display: inline-block;
+        color: $gray;
+    }
+    &-heading.heading {
+    }
+}

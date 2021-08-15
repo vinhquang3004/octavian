@@ -1,0 +1,50 @@
+.team {
+    background-color: $gray-lighter;
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 200px;
+        padding: 150px 0;
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        max-width: 370px;
+        width: 100%;
+    }
+    &-heading {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 1.55;
+
+        margin-bottom: 40px;
+    }
+    &-desc {
+        font-size: 18px;
+        line-height: lineH(34,18);
+        margin-bottom: 60px;
+    }
+    &-images {
+        // max-width: 670px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 30px;
+    }
+    &-column {
+
+    }
+    &-img2 {
+        margin-top: 30px;
+        //+ float: right;
+        margin-left: auto;
+
+    }
+
+    &-img3 {
+
+    }
+}
